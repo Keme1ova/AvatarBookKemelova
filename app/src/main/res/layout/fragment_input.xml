@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.InputFragment"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_input"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_load_photo"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:cornerRadius="32dp"
+        android:layout_gravity="center_horizontal"
+        android:text="load"
+        android:textAllCaps="false"
+        />
+
+    <EditText
+        android:id="@+id/edit_name_surname"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#D3C3E6"
+        android:hint="write your surname"
+        />
+    <EditText
+        android:id="@+id/edit_telNubmer"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#D3C3E6"
+        android:hint="write friends telephone"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="ADD"
+        app:cornerRadius="32dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_perehod"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="TO List"
+        android:visibility="visible"
+        app:cornerRadius="32dp" />
+</LinearLayout>
